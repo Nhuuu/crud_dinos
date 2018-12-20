@@ -1,0 +1,16 @@
+<form method="GET" action="/dinosaurs">
+	<label for="nameFilter">Filter By Name</label>
+	<input id="nameFilter" type="text" name="nameFilter">
+	<input type="submit">
+</form>
+
+<!-- 
+/* myDino is taken from the object that was put in when rendering.
+*/ -->
+
+
+<ul>
+	<% myDino.forEach(function(dino){ %>
+		<li><%= dino.name %> is a <%= dino.type %></li>
+	<% }); %>
+</ul>
